@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css')
+
+    link(rel='stylesheet', href='/stylesheets/neumorphic.css')
+    link(rel='stylesheet', href='/stylesheets/x.css')
+  body
+    
+    nav.x-bar.x-padding.x-round-large.with-shadow
+        a.x-bar-item.x-button.x-hover-pink.x-round-xxlarge.x-text-pink(href='/') BLUE OMEGA
+        a.x-bar-item.x-button.x-round-xxlarge.x-text-grey(href='/projects') PROJECTS  
+        a.x-bar-item.x-button.x-round-xxlarge.x-text-grey(href='/members') EMPLOYEES  
+        a.x-bar-item.x-button.x-round-xxlarge.x-text-grey(href='/about') ABOUT US
+
+                    
+    block content
+        script(src='/build/main.es5.js')
+        script(src='/build/polyfills.es5.js')
+        script(src='/build/runtime.es5.js')
+        script(src='/build/styles.es5.js')
+        script(src='/build/vendor.es5.js')
+    
+    footer.x-container
+        div.x-container.x-padding.x-round-large.with-shadow.x-margin-top.x-margin-bottom
+            span.x-left.x-large BLUE OMEGA - Software Solutions
+            span.x-right Copyright © 2020. All Rights Reserved.
+    
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js')
+           
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js')
